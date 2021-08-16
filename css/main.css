@@ -1,0 +1,554 @@
+@charset "UTF-8";
+/*Colores principales: Verde Oscuro, Marron, Violeta*/
+/*Todavia estos estilos no estan definidos,
+tampoco utilice Id ya que no resolvi algo que sea "unico"*/
+/*Titulos: Color Negro*/
+/* Articulos : Bordes redondeados, fondo verde claro opaco*/
+/*Nivelamos todas las paginas*/
+/*Modificaciones del bootstrap*/
+.navbar {
+  width: 100%;
+  background-color: #0f222d;
+  height: 15vh;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  font-size: 20px; }
+
+nav .row {
+  width: 100%; }
+
+.navbar-nav {
+  align-items: center;
+  height: 15vh; }
+
+li a {
+  -webkit-text-stroke: 0.5px blanchedalmond !important; }
+
+.dropdown-menu {
+  background-color: #0f222d; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: blanchedalmond; }
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: blanchedalmond; }
+
+.dropdown-item {
+  color: blanchedalmond; }
+
+.navbar-light .navbar-toggler {
+  color: #dc3545;
+  border-color: #dc3545; }
+
+.contenedorMapa {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  height: 380px;
+  display: flex;
+  margin-top: 25px; }
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: grid; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.body {
+  background-color: #ADBF34; }
+
+/*-----------------------------------------------------*/
+/*********Cabecera***************************************/
+.cabecera-Logo {
+  width: 6.5rem;
+  height: 6rem; }
+
+li {
+  display: inline-block;
+  transition: all 2s; }
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 10px;
+  background: #0f222d;
+  color: white;
+  padding: 5px;
+  border-bottom: white solid 0.5px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; }
+
+#menu ul ul li {
+  float: none;
+  width: auto; }
+
+#menu ul ul a {
+  line-height: 120%;
+  padding: 15px 20px; }
+
+#menu ul li:hover > ul {
+  display: block; }
+
+/*-----------------------------------------------------*/
+/* Titulo principial de la Pagina*/
+.tituloDos {
+  color: #0f222d;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  z-index: 2; }
+
+/*-----------------------------------------------------*/
+/*tranformaciones*/
+a:hover {
+  color: #F2CB05; }
+
+.navbar-nav li:hover {
+  transform: scale(1.1, 1.1); }
+
+.animate__animated.animate__pulse {
+  animation-duration: 4s; }
+
+/*-----------------------------------------------------*/
+/*********************Contenedor Opinion usuarios********************/
+.contenedorOpinionUsuario {
+  width: 95%;
+  background-color: #F2B705;
+  color: #08080c;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  border: 5px solid #F2CB05; }
+
+.contenedorOpinionUsuario__Foto {
+  width: 25vw;
+  border-radius: 10%;
+  margin: 5%; }
+
+.contenedorOpinionUsuario__Foto__Animacion:hover {
+  transform: scale(1.1, 1.1); }
+
+.contenedorOpinionUsuario__Parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  height: 40vh;
+  position: relative; }
+
+.contenedorOpinionUsuario__Foto__Animacion {
+  transition: all 3s; }
+
+.contenedorOpinionUsuario__Estrellas {
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  position: absolute;
+  bottom: 5%; }
+
+/*****************************************************************************/
+/*dieseño articulo*/
+.diseñoArticulo {
+  margin-bottom: 10px;
+  border-radius: 1px;
+  border: 1px solid black; }
+
+#foto1 {
+  grid-area: foto1; }
+
+/*-----------------------Publicados------------------------------*/
+.contenedorPublicados {
+  background: #56ab2f;
+  background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);
+  background: linear-gradient(to bottom, #a8e063, #56ab2f); }
+
+.contenedorPublicados__Columnas {
+  display: flex;
+  flex-direction: column; }
+
+.contenedorPublicados__Articulo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+.contenedorPublicados__Texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*******************Seccion nicial**************************/
+.contenedorPrincipal {
+  margin: 0; }
+
+.contenedorPrincipal__Titulo {
+  color: #0f222d;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 1; }
+
+.contenedorPrincipal__Foto {
+  width: 100%;
+  height: 20%;
+  margin: 0px 0px 0px;
+  position: relative;
+  max-width: 100%;
+  object-fit: cover; }
+
+/*Sector de Quienes somos*/
+.contenedorInformativo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  height: 80vh; }
+
+.contenedorInformativo__Titulo {
+  color: #0b0c06;
+  font-size: 30px;
+  padding-top: 10px; }
+
+.contenedorInformativo__Parrafo {
+  width: 45vw;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%; }
+
+.contenedorInformativo__Foto {
+  width: 45vw;
+  border-radius: 5%;
+  margin: 4%; }
+
+#contenedorInformativo__Columnas {
+  display: grid;
+  grid-template-areas: "contenedorInformativo__Parrafo__Diseño foto1";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto; }
+
+#contenedorInformativo__Parrafo__Diseño {
+  grid-area: contenedorInformativo__Parrafo__Diseño; }
+
+/*******************************************************************/
+/****************************diseño del formulario-****************/
+.contenedorContacto {
+  height: 90vh;
+  padding-top: 10px;
+  background: #649173;
+  background: -webkit-linear-gradient(to top, #DBD5A4, #649173);
+  background: linear-gradient(to top, #DBD5A4, #649173); }
+
+.contenedorContacto__Formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 70vh;
+  padding-top: 65px; }
+
+.contenedorContacto__Formulario__Disenio {
+  margin-top: 15px;
+  border: 2px solid #BE201F;
+  padding: 5%; }
+
+.contenedorContacto__App {
+  height: 70vh;
+  padding-top: 83px; }
+
+.contenedorContacto__App__Foto {
+  width: 350px;
+  height: 470px; }
+
+.contenedorPrincipal__Titulo {
+  color: #0f222d;
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 130px;
+  z-index: 1; }
+
+/*-----------------------------------------------------*/
+/* todos los titulos del footer de la pagina 
+serán color blanco con el tipo de letra verdana con bordes color marron*/
+.titulo_footer_color_verdana {
+  color: #BE201F;
+  font-family: Verdana; }
+
+.contenedorFooter {
+  background: #0f222d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px; }
+
+.contenedorFooter__Linkedin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.contenedorFooter__Redes-Linkedin {
+  width: 35px;
+  height: 35px;
+  margin: 2px; }
+
+.contenedorFooter__Redes {
+  width: 60px;
+  height: 60px;
+  margin: 2px; }
+
+.contenedorFooter__Redes__Disenio {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  padding-top: 20px;
+  height: 120px;
+  width: 300px; }
+
+.contenedorFooter__Redes__text {
+  font-size: 15px; }
+
+/*************************************************/
+/*Etiquetas especiales*/
+span {
+  color: blanchedalmond; }
+
+li a {
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  margin-left: 1.5rem; }
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 16px; }
+
+h3 {
+  color: white; }
+
+/* Posible paleta de colores*/
+.ab {
+  color: verdeFondo; }
+
+.ac {
+  color: #9CA539; }
+
+.ad {
+  color: #D88946; }
+
+.ae {
+  color: #BE201F; }
+
+.af {
+  color: #F4F5F2; }
+
+/*Posible paleta de colores*/
+.a {
+  color: #BF8FB7; }
+
+.b {
+  color: #F0F0F2; }
+
+.c {
+  color: #F2CB05; }
+
+.d {
+  color: #F2D95C; }
+
+.e {
+  color: #F2B705; }
+
+/*Adaptar para tablet*/
+@media (max-width: 992px) {
+  .cabecera-Logo {
+    width: 6.5rem;
+    height: 5rem; }
+  .navbar-nav {
+    align-items: flex-start !important; }
+  .navbar-collapse {
+    background: #0f222d;
+    height: 250px; } }
+
+/*Adaptar para celu*/
+@media (max-width: 418px) {
+  .contenedorFooter {
+    background-color: #9CA539;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .cabecera-Logo {
+    width: 65px;
+    height: 60px;
+    margin-left: 0%; }
+  .contenedorPrincipal__Titulo {
+    color: #0f222d;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    z-index: 1; }
+  .navbar-nav {
+    align-items: flex-start !important; }
+  .navbar-collapse {
+    background: #0f222d;
+    height: 200px; }
+  .contenedorInformativo {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 90%; }
+  .contenedorInformativo__Parrafo {
+    width: 90%;
+    padding: 20px 0px;
+    line-height: 25px;
+    font-size: 15px;
+    margin: 0px 15px;
+    text-align: center; }
+  .contenedorInformativo__Foto {
+    width: 60vw;
+    border-radius: 4%;
+    margin: 4%; }
+  .contenedorInformativo__Titulo {
+    font-size: 15px;
+    padding-top: 10px; }
+  /***Opinion usuario*/
+  .contenedorOpinionUsuario__Foto {
+    width: 90%;
+    border-radius: 10%;
+    margin: 5%; }
+  .contenedorOpinionUsuario__Estrellas {
+    width: 80px;
+    height: 80px;
+    margin: -40px; }
+  /**Footer**/
+  .contenedorFooter__Redes__Disenio {
+    margin: 1%; }
+  .contenedorFooter__Redes__text {
+    font-size: 15px; }
+  .contenedorFooter__Linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px; } }
+
+@media (min-width: 419px) and (max-width: 768px) {
+  .navbar-nav {
+    align-items: flex-start !important; }
+  .contenedorPrincipal__Titulo {
+    color: #0f222d;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 19%;
+    left: 20px;
+    z-index: 1; }
+  .contenedorPrincipal__Ancla {
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 19%;
+    left: 20px;
+    z-index: 1; }
+  .contenedorOpinionUsuario__Foto {
+    width: 90%;
+    border-radius: 10%;
+    margin: 5%; }
+  .contenedorFooter {
+    background-color: #0f222d;
+    width: 100%;
+    height: 20vh;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between; }
+  .formatoNav_lista {
+    list-style: none;
+    list-style-position: initial;
+    list-style-type: none;
+    font-family: sans-serif;
+    text-decoration: none; }
+  li {
+    display: inline-block; }
+  #menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background: #be201f;
+    padding: 0; }
+  #menu ul ul li {
+    float: none;
+    width: auto; }
+  #menu ul ul a {
+    line-height: 120%;
+    padding: 15px 20px; }
+  #menu ul li:hover > ul {
+    display: block; }
+  li a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    margin-left: 1.5rem; }
+  .contenedorOpinionUsuario {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2B705;
+    color: #08080c;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-bottom: 10px; }
+  .parrafoFormato {
+    width: 45vw;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%; }
+  #linkedin a {
+    display: none; }
+  #legales {
+    display: none; }
+  .navbar-collapse {
+    background: #0f222d;
+    height: 200px; } }
+
+.facebookLogo {
+  content: url("../imagenes/facebook.png"); }
+
+.twitterLogo {
+  content: url("../imagenes/twitter.png"); }
+
+.instagramLogo {
+  content: url("../imagenes/instagram.png"); }
+
+.linkedinLogo {
+  content: url("../imagenes/linkedin.png"); }

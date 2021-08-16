@@ -1,0 +1,42 @@
+/*Modificaciones del bootstrap*/
+
+.navbar
+{
+    width: 100%;
+    background-color:$$colorLaika;
+    height: 15vh;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+nav .row
+{
+    width: 100%;
+}
+.navbar-nav
+{
+    align-items: center;
+    height: 15vh;
+}
+
+li a
+{
+    -webkit-text-stroke: 0.5px blanchedalmond;
+}
+.dropdown-menu
+{
+    background-color: $colorLaika;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    color: blanchedalmond;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: blanchedalmond;
+}
+.dropdown-item
+{
+    color: blanchedalmond;
+}

@@ -1,0 +1,509 @@
+/*Colores principales: Verde Oscuro, Marron, Violeta*/
+/*Todavia estos estilos no estan definidos,
+tampoco utilice Id ya que no resolvi algo que sea "unico"*/
+/*Titulos: Color Negro*/
+/* Articulos : Bordes redondeados, fondo verde claro opaco*/
+/*Nivelamos todas las paginas*/
+* {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration:none;
+}
+.body_color{
+    background-color:verdeFondo;
+}
+/*-----------------------------------------------------*/
+/*Bases para el hedear*/
+.formatoHeader
+{
+    height: 15vh;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.colorHeader
+{
+    background-color:$colorLaika;
+}
+.formatoNav_lista
+{
+    list-style: none;
+    list-style-position: initial;
+    list-style-type: none;
+    font-family: sans-serif;
+    text-decoration: none;
+} 
+li {
+    display: inline-block;
+    transition: all 2s;
+}
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top:120%;
+    right: 10px;
+    background: $colorLaika;
+    color: white;
+    padding: 5px;
+    border-bottom: white solid 0.5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+#menu ul ul li {
+    float: none;
+    width: auto;
+}
+#menu ul ul a 
+{
+    line-height: 120%;
+    padding: 15px 20px;
+}
+#menu ul li:hover > ul 
+{
+    display: block;
+}
+/*-----------------------------------------------------*/
+/* Titulo principial de la Pagina*/
+.titulo
+{
+    color:$colorLaika;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+}
+.tituloDos
+{
+    color:$colorLaika;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 2;
+}
+/*-----------------------------------------------------*/
+/*tranformaciones*/
+a:hover
+{
+    color: #F2CB05;
+}
+.navbar-nav li:hover
+{
+    transform: scale(1.1, 1.1);
+}
+.contenedorimagenes:hover
+{
+    transform: scale(1.1, 1.1);
+}
+.contenedorimagenes
+{
+    transition: all 3s;
+}
+.animate__animated.animate__pulse
+{
+    animation-duration: 4s;
+}
+/*-----------------------------------------------------*/
+/* Estilos para los diferentes articulos.*/
+
+/*.posicionContenedorArticle
+{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2B705;
+    color: #08080c;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border:3px solid #F2CB05;
+} */
+.posicionContenedorArticle
+{
+    width: 95%;
+    background-color: #F2B705;
+    color: #08080c;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    border: 5px solid #F2CB05;
+}
+.seccionDeArticle {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+/*dieseño articulo*/
+.diseñoArticulo
+{
+    margin-bottom: 10px;
+    border-radius: 1px;
+    border:1px solid black;
+}
+.contactoContenedor
+{
+    height: 90vh;
+    padding-top: 10px;
+    background: #649173; 
+    background: -webkit-linear-gradient(to top, #DBD5A4, #649173);
+    background: linear-gradient(to top, #DBD5A4, #649173);
+}
+/*-----------------------------------------------------*/
+/*Degrade*/
+.pruebaColorArticulo
+{
+    background: #56ab2f; 
+background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f); 
+background: linear-gradient(to bottom, #a8e063, #56ab2f); 
+}
+/*-----------------------------------------------------*/
+/*Seccion nicial*/
+#inicial
+{
+    display: grid;
+    grid-template-areas: 
+    "parrafoInicial foto1";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+#parrafoInicial{
+    grid-area: parrafoInicial;
+}
+#foto1
+{
+    grid-area: foto1;
+}
+/*-----------------------------------------------------*/
+.estrellas
+{
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+    position: absolute;
+    bottom: 5%;
+}
+.fotoArticulo
+{
+    width: 25vw;
+    border-radius: 10%;
+    margin: 5%;
+}
+.textoArticulo
+{
+    display: flex;
+    flex-direction: column;
+    margin: 7%;
+}
+#contenedor
+{
+    margin: 0;
+}
+.contenedorParrafoFila
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:transparent;
+    color: white;
+    height: 80vh;
+} 
+.contenedorParrafoColumna
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    color: black;
+    height: 40vh;
+    position: relative;
+} 
+.columna
+{
+    display: flex;
+    flex-direction: column;
+}
+.fotoAdoptar
+{
+    width: 45vw;
+    border-radius: 5%;
+    margin:4%;
+}
+.parrafoFormato {
+    width: 45vw;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+}
+/*diseño del formulario*/
+.formularioDisenio
+{
+    margin-top: 15px;
+    border:2px solid #BE201F;
+    padding: 5%;
+}
+.formularioFormato
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 70vh;
+    padding-top: 65px;
+}
+.formularioFotos
+{
+    height: 70vh;
+    padding-top: 83px;
+}
+.contactoTitulo
+{
+    color:colorLaika;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    z-index: 1;
+}
+
+.contactoFoto
+{
+    width: 350px;
+    height: 470px;
+}
+/*-----------------------------------------------------*/
+/* todos los titulos del footer de la pagina 
+serán color blanco con el tipo de letra verdana con bordes color marron*/
+.titulo_footer_color_verdana{
+    color: #BE201F;
+    font-family: Verdana;
+}
+/*footer con fondo verde*/
+.footer_color{
+    background: rgb(15,34,45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+span
+{
+    color: blanchedalmond;
+}
+/*Estilos especiales para el contenido del footer*/
+#linkedin
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.redes
+{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+.redesPosicion
+{
+    display: flex;
+    flex-direction: column;
+    margin-right:5%;
+}
+/*----------*/
+/*titulos principales van a ser de un color oscuro*/
+.titulo_main_color_oscuro{
+    color: #0b0c06;
+    padding-left: 25%;
+}
+/*Etiquetas especiales*/
+li a{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    margin-left: 1.5rem;
+}
+
+h2
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+}
+h3{
+    color: white;
+}
+
+.foto {
+    width: 100%;
+    margin: 0px 0px 0px;
+    position: relative;
+    max-width: 100%;
+    object-fit: cover;
+    height: 20%;
+}
+#logo {
+    width: 6.5rem;
+    height: 6rem;
+}
+
+/* Posible paleta de colores*/
+.ab{ color: verdeFondo; }
+.ac{ color: #9CA539; }
+.ad{ color: #D88946; }
+.ae { color:#BE201F; }
+.af{ color: #F4F5F2; }
+/*Posible paleta de colores*/
+.a{ color: #BF8FB7; }
+.b{ color: #F0F0F2; }
+.c{ color: #F2CB05; }
+.d{ color: #F2D95C; }
+.e{ color: #F2B705; }
+
+/*Adaptar para tablet*/
+@media (max-width: 992px)
+{
+    #logo {
+        width: 6.5rem;
+        height: 5rem;
+    }
+    .navbar-nav {
+        align-items:flex-start !important;
+    }
+    .navbar-collapse 
+    {
+        background: colorLaika;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px)
+{
+.navbar-nav 
+    {
+    align-items:flex-start !important;
+    }
+    .formatoHeader
+    {
+        width: 100wh;
+        height: 15vh;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    .formatoNav_lista
+    {
+        list-style: none;
+        list-style-position: initial;
+        list-style-type: none;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    li {
+        display: inline-block;
+    }
+    #menu ul ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        right: 10px;
+        background: #be201f;
+        padding: 0;
+    }
+    #menu ul ul li {
+        float: none;
+        width: auto;
+    }
+    #menu ul ul a 
+    {
+        line-height: 120%;
+        padding: 15px 20px;
+    }
+    #menu ul li:hover > ul 
+    {
+        display: block;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+        margin-left: 1.5rem;
+    }
+    .posicionContenedorArticle
+    {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2B705;
+    color: #08080c;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    }
+    .parrafoFormato {
+        width: 45vw;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+    #linkedin a
+    {
+        display: none;
+    }
+    #legales
+    {
+        display: none;
+    }
+    .navbar-collapse 
+    {
+        background: colorLaika;
+        height: 200px;
+    }
+}
+/*Adaptar para celu*/
+@media (max-width: 418px)
+{    
+    .footer_color{
+        background-color:#9CA539;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        #logo {
+            width: 5;
+            height: 10vh;
+            margin-left: 0%;
+        }
+        .navbar-nav {
+            align-items:flex-start !important;
+        }
+    .navbar-collapse 
+    {
+        background: colorLaika;
+        height: 200px;
+    }
+}
