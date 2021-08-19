@@ -53,6 +53,9 @@ ol, ul, dl {
   margin-bottom: 1rem;
   display: grid; }
 
+.body_color_QueNecesitas {
+  background: #F2B705; }
+
 * {
   margin: 0;
   padding: 0;
