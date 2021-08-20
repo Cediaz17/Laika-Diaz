@@ -118,7 +118,7 @@ a:hover
     align-items: center;
     background-color:transparent;
     color: black;
-    height: 40vh;
+    height: 45vh;
     position: relative;
 }
 .contenedorOpinionUsuario__Foto__Animacion
@@ -181,6 +181,14 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 {
     margin: 0;
 }
+.contenedorPrincipal__Ancla
+{
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    z-index: 1;
+    @include tamText(15px);
+}
 .contenedorPrincipal__Titulo
 {
     color:$colorLaika;
@@ -207,11 +215,11 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     align-items: center;
     background-color:transparent;
     color: white;
-    height: 80vh;
+    height: 100vh;
 } 
 .contenedorInformativo__Titulo{
     color: #0b0c06;
-    @include tamText(30px);
+    @include tamText(35px);
     padding-top: 10px;
 }
 .contenedorInformativo__Parrafo {
@@ -226,7 +234,7 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 {
     width: 45vw;
     border-radius: 5%;
-    margin:4%;
+    margin:5%;
 }
 #contenedorInformativo__Columnas
 {
