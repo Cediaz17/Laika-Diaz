@@ -246,7 +246,8 @@ a:hover {
 .contenedorInformativo__Foto {
   width: 45vw;
   border-radius: 5%;
-  margin: 5%; }
+  margin: 5%;
+  height: 75vh; }
 
 #contenedorInformativo__Columnas {
   display: grid;
@@ -325,7 +326,8 @@ serán color blanco con el tipo de letra verdana con bordes color marron*/
 .contenedorFooter__Redes {
   width: 60px;
   height: 60px;
-  margin: 2px; }
+  margin: 2px;
+  flex-flow: nowrap; }
 
 .contenedorFooter__Redes__Disenio {
   display: flex;
@@ -423,7 +425,13 @@ h3 {
     align-items: flex-start !important; }
   .navbar-collapse {
     background: #0f222d;
-    height: 200px; }
+    height: 260px; }
+  .contenedorPrincipal__Ancla {
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    z-index: 1;
+    font-size: 9px; }
   .contenedorInformativo {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -442,9 +450,10 @@ h3 {
   .contenedorInformativo__Foto {
     width: 60vw;
     border-radius: 4%;
-    margin: 4%; }
+    margin: 4%;
+    height: 36vh; }
   .contenedorInformativo__Titulo {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 10px; }
   /***Opinion usuario*/
   .contenedorOpinionUsuario__Foto {
@@ -454,7 +463,8 @@ h3 {
   .contenedorOpinionUsuario__Estrellas {
     width: 80px;
     height: 80px;
-    margin: -40px; }
+    margin: -40px;
+    bottom: 19%; }
   /**Footer**/
   .contenedorFooter__Redes__Disenio {
     margin: 1%; }
@@ -464,7 +474,16 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 3px; } }
+    margin: 3px; }
+  .contenedorFooter__Redes {
+    width: 45px;
+    height: 45px;
+    flex-flow: nowrap;
+    justify-content: center;
+    margin-left: 20px; }
+  .contenedorFooter__Redes-Linkedin {
+    width: 50%;
+    margin-right: 5px; } }
 
 @media (min-width: 419px) and (max-width: 768px) {
   .navbar-nav {

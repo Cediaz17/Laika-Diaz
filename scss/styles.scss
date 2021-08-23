@@ -235,6 +235,7 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     width: 45vw;
     border-radius: 5%;
     margin:5%;
+    height: 75vh;
 }
 #contenedorInformativo__Columnas
 {
@@ -325,6 +326,7 @@ justify-content: center;
 {
     @include tam(60px,60px);
     margin: 2px;
+    flex-flow: nowrap;
 }
 .contenedorFooter__Redes__Disenio
 {
@@ -421,7 +423,15 @@ h3{
     .navbar-collapse 
     {
         background: $colorLaika;
-        height: 200px;
+        height: 260px;
+    }
+    .contenedorPrincipal__Ancla
+    {
+        position: absolute;
+        top: 15%;
+        left: 1%;
+        z-index: 1;
+        font-size: 9px;
     }
     .contenedorInformativo
     {
@@ -447,10 +457,11 @@ h3{
         width: 60vw;
         border-radius: 4%;
         margin: 4%;
+        height: 36vh;
     }
     .contenedorInformativo__Titulo
     {
-        @include tamText(15px);
+        @include tamText(20px);
         padding-top: 10px;
     }
 
@@ -465,6 +476,7 @@ h3{
     {   
         @include tam(80px,80px);
         margin: -40px;
+        bottom: 19%;
     }
 
     /**Footer**/
@@ -482,6 +494,18 @@ h3{
             align-items: center;
             margin: 3px;
         }
+        .contenedorFooter__Redes {
+            width: 45px;
+            height: 45px;
+            flex-flow: nowrap;
+            justify-content: center;
+            margin-left: 20px;
+        }
+        .contenedorFooter__Redes-Linkedin {
+            width: 50%;
+            margin-right: 5px;
+        }
+
 }
 
 @media (min-width: 419px) and (max-width: 768px)
