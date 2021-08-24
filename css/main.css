@@ -56,6 +56,15 @@ ol, ul, dl {
 .body_color_QueNecesitas {
   background: #F2B705; }
 
+.btn-primary {
+  color: #fff;
+  background-color: #F2B705;
+  border-color: #F2B705; }
+
+/*.card
+{
+    height: 30vh;
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -372,6 +381,9 @@ h3 {
   color: white;
   font-family: 'Signika Negative', sans-serif;
   text-shadow: -20px 11px 40px black; }
+
+.busquedaGrilla {
+  height: 950px; }
 
 /****MAPA******/
 .mapa {
