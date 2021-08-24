@@ -364,6 +364,33 @@ h3{
     color: white;
 }
 
+/******* Carousel******/
+.carousel_Titulo
+{
+    @include tamText(55px);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    opacity: 80%;
+    text-shadow: 2px 2px 40px black;
+}
+.carousel_Subtitulo
+{
+    @include tamText(30px);
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    text-shadow:-20px 11px 40px black;
+}
+
+/****MAPA******/
+.mapa {
+    margin-bottom: 2em;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 0.5px;
+}
 /* Posible paleta de colores*/
 .ab{ color: verdeFondo; }
 .ac{ color: #9CA539; }
@@ -376,6 +403,9 @@ h3{
 .c{ color: #F2CB05; }
 .d{ color: #F2D95C; }
 .e{ color: #F2B705; }
+
+
+
 
 /*Adaptar para tablet*/
 @media (max-width: 992px)
