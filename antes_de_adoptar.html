@@ -83,43 +83,90 @@
         </div>
         <div id="Formulario" class="container">
             <!--Formulario de carga para adoptar-->
-            <form action="https://formspree.io/f/mrgrlwnn" method="POST" class="form-row"> <!--Agrupo los campos que estan relacionados-->
-                <fieldset> 
-                    <legend>Condiciones minimas para adoptar</legend>
-                    <div class="col-3">
-                        <label for="opc1" class="custom-control-label">Opcion uno</label>
-                        <input type="checkbox" class="custom-control-input" id="opc1" name="opcion uno" value="1">
+            <form action="https://formspree.io/f/mrgrlwnn" method="POST"> 
+                <!--Agrupo los campos que estan relacionados-->
+                <fieldset>
+                    <legend class="text-center">Preguntas basicas de adopcioón</legend>
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="seleccion1">¿Que clase de vivienda tenés?</label>
+                            <select name="Seleccion" id="seleccion1">
+                                <option value="Edificio">Edificio</option>
+                                <option value="Casa baja">Casa baja</option>
+                                <option value="Chalet">Chalet</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿La vivienda es de tu propiedad?</label>
+                                <select name="Seleccion" id="seleccion1">
+                                    <option value="No">No</option>
+                                    <option value="Si">Si</option>
+                                </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿Consideras tener espacio?</label>
+                                <select name="Seleccion" id="seleccion1">
+                                    <option value="Mucho">Mucho</option>
+                                    <option value="Poco">Poco</option>
+                                    <option value="Nada">Nada</option>
+                                </select> 
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿Contas con mascotas?</label>
+                            <select name="Seleccion" id="seleccion1">
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <label for="opc2" class="custom-control-label">Opcion dos</label>
-                        <input type="checkbox" class="custom-control-input"name="opcion dos" value="1">
+                    <div class="row">
+                        <div class="col-3">
+                            <label for="seleccion1">¿Contas con seguridad en tu vivienda?</label>
+                            <select name="Seleccion" id="seleccion1">
+                                <option value="Rejas">Rejas</option>
+                                <option value="Cercas">Cercas</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿Hay niños o personas de edad avanzada?</label>
+                                <select name="Seleccion" id="seleccion1">
+                                    <option value="No">No</option>
+                                    <option value="Si">Si</option>
+                                </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿Aceptarán a tu
+                                mascota cuándo nazca el bebé?</label>
+                                <select name="Seleccion" id="seleccion1">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                    <option value="Nose">Nose</option>
+                                </select> 
+                        </div>
+                        <div class="col-3">
+                            <label for="seleccion1">¿Alguno es alérgico al pelo de mascotas?</label>
+                            <select name="Seleccion" id="seleccion1">
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <label for="opc3" class="custom-control-label">Opcion tres</label>
-                        <input type="checkbox" class="custom-control-input" name="opcion cuatro" value="1">  
-                    </div>
-                    <div class="col-3">
-                        <label for="opc4" class="custom-control-label">Opcion cuatro</label>
-                        <input type="checkbox" class="custom-control-input" name="opcion tres" value="1">
-                    </div>
-                    <label for="opc5" class="custom-control-label">Opcion cinco</label>
-                    <input type="checkbox" class="custom-control-input" name="opcion cinco" value="1">
                 </fieldset>
                 <fieldset>
-                    <legend>Datos Personales </legend>
+                    <legend class="text-center">Datos Personales </legend>
                     <div>
                         <label for="nombre"> Nombre: </label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu Apellido"  class="diseñoFormulario">
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu Apellido"  class="form-control">
                     </div>
                     <div>
                         <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" placeholder="Ingresá tu Apellido" class="diseñoFormulario">
+                        <input type="text" name="apellido" placeholder="Ingresá tu Apellido" class="form-control">
                     </div>
                     <div>
                         <label for="localidad">Localidad</label>
-                        <input type="text" name="Ingresá tu Localidad" placeholder="Ingresá tu Localidad" class="diseñoFormulario">
+                        <input type="text" name="Ingresá tu Localidad" placeholder="Ingresá tu Localidad" class="form-control">
                     </div>
-                            
                             <div>
                                 <label for="seleccion1">Seleccioná Especie</label>
                                 <select name="Seleccion" id="seleccion1">
