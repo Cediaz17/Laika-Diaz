@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="body">
+<body class="bodyAdoptar">
     <!--navegador entre las diferentes paginas /menu-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -61,30 +61,49 @@
         </nav>
     </header>
     <main>
-        <div class="">
-            <a href="#Formulario">Quienes Somos</a> 
+        <div class="contenedorPrincipal__Ancla">
+            <a href="#Formulario">Postulate</a> 
+        </div>
+        <!--Intro a Adoptar-->
+        <div class="contenedorIntro">
+            <p>
+                Hola! ¿Comó estas? Antes que nada, gracias por elegir adoptar!
+                <br>
+                <em>Información importante:</em> 
+                <br>
+                -Este Formulario no confirma la adopción.
+                <br>
+                -El equipo de adopciones revisara los datos y se conectara'dentro de una semana aproximadamente para hablar de cómo se continúa con el proceso o en caso de que el animal haya sido adoptado ver otras opciones.
+            </p>
         </div>
         <!--Imagen Carrusel-->
         <div>
-            <img src="imagenes/pexels-eddie-galaxy-3628100.jpg" class="contenedorPrincipal__Foto" alt="Carrusel de imagenes">
-            <h1>Postulate para Adoptar</h1>
+            <img src="imagenes/teclado.jpg" class="contenedorPrincipal__Foto" alt="teclado">
+            <h1 class="text-center">Postulate para Adoptar</h1>
         </div>
-        <div id="Formulario">
+        <div id="Formulario" class="container">
             <!--Formulario de carga para adoptar-->
-            <p>Antes de realizar una adopcion es importante tener en cuenta varios aspectos antes de adoptar una mascota para tener en casa para proporcionarle una vida feliz y saludable. Por eso te proponemos que completes el siguiente formulario para conocer mas sobre vos y las cualidades que tenes para realizar una adopcion responsable y feliz</p>
-            <form action="https://formspree.io/f/mrgrlwnn" method="POST" class="diseñoFormulario"> <!--Agrupo los campos que estan relacionados-->
+            <form action="https://formspree.io/f/mrgrlwnn" method="POST" class="form-row"> <!--Agrupo los campos que estan relacionados-->
                 <fieldset> 
                     <legend>Condiciones minimas para adoptar</legend>
-                    <label for="opc1">Opcion uno</label>
-                    <input type="checkbox" id="opc1" name="opcion uno" value="1">
-                    <label for="opc2">Opcion dos</label>
-                    <input type="checkbox" name="opcion dos" value="1">
-                    <label for="opc3">Opcion tres</label>
-                    <input type="checkbox" name="opcion cuatro" value="1">
-                    <label for="opc4">Opcion cuatro</label>
-                    <input type="checkbox" name="opcion tres" value="1">
-                    <label for="opc5">Opcion cinco</label>
-                    <input type="checkbox" name="opcion cinco" value="1">
+                    <div class="col-3">
+                        <label for="opc1" class="custom-control-label">Opcion uno</label>
+                        <input type="checkbox" class="custom-control-input" id="opc1" name="opcion uno" value="1">
+                    </div>
+                    <div class="col-3">
+                        <label for="opc2" class="custom-control-label">Opcion dos</label>
+                        <input type="checkbox" class="custom-control-input"name="opcion dos" value="1">
+                    </div>
+                    <div class="col-3">
+                        <label for="opc3" class="custom-control-label">Opcion tres</label>
+                        <input type="checkbox" class="custom-control-input" name="opcion cuatro" value="1">  
+                    </div>
+                    <div class="col-3">
+                        <label for="opc4" class="custom-control-label">Opcion cuatro</label>
+                        <input type="checkbox" class="custom-control-input" name="opcion tres" value="1">
+                    </div>
+                    <label for="opc5" class="custom-control-label">Opcion cinco</label>
+                    <input type="checkbox" class="custom-control-input" name="opcion cinco" value="1">
                 </fieldset>
                 <fieldset>
                     <legend>Datos Personales </legend>
