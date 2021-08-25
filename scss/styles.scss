@@ -398,6 +398,16 @@ h3{
     text-align: center;
     border-radius: 0.5px;
 }
+
+.contenedorPostulate__Titulo
+{
+    font-family: 'Anton', sans-serif;
+    @include tamText(3rem);
+    position: absolute;
+    top: 750px;
+    left: 650px;
+    z-index: 1;
+}
 /* Posible paleta de colores*/
 .ab{ color: verdeFondo; }
 .ac{ color: #9CA539; }
