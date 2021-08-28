@@ -444,6 +444,15 @@ h3{
 /*Adaptar para celu*/
 @media (max-width: 418px)
 {   
+    .contenedorPublicados__Articulo {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        }
     .contenedorFooter{
         background-color:#9CA539;
         display: flex;
@@ -557,6 +566,15 @@ h3{
 
 @media (min-width: 419px) and (max-width: 768px)
 {
+.contenedorPublicados__Articulo {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    }
     .navbar-nav 
     {
         align-items:flex-start !important;
