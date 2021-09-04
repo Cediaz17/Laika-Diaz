@@ -162,19 +162,93 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 .contenedorPublicados__Articulo {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-content: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-bottom: 20px;
 }
 
+.contenedorPublicados__Titulo
+{
+    color:$colorLaika;
+    font-family: 'Anton', sans-serif;
+    @include tamText(2.5rem);
+    z-index: 1;
+    margin-top: 20px;
+}
+.contenedorPublicados__Parrafo {
+    width: 45vw;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedorPublicados__Foto {
+    width: 30vw;
+    border-radius: 5%;
+    margin: 5%;
+    height: 65vh;
+}
+.contenedorPublicados__ParrafoLeft {
+    width: 45vw;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedorPublicados__FotoLeft {
+    width: 30vw;
+    border-radius: 5%;
+    height: 65vh;
+}
 .contenedorPublicados__Texto
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 25px;
+    text-align: center;
+    font-family: mons;
+    font-size: 20px;
 }
+.contenedorPublicados__Texto__Left
+{
+    margin: 5%;
+}
+/*******************Seccion Que necesitas**************************/
+.contenedorQueNecesitas
+{
+    height: 50vh;
+}
+.tituloCard
+{
+
+    font-size: 1rem;
+}
+
+.busquedaGrilla
+{
+    height: 1100px;
+}
+.busquedaGrilla__botones
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.card-boton
+{
+    display: block;
+    color: black;
+    background-color:$verdeFondo;
+}
+/****MAPA******/
+.mapa {
+    margin-bottom: 2em;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 0.5px;
+}
+
 
 /*******************Seccion nicial**************************/
 .contenedorPrincipal
@@ -380,25 +454,6 @@ h3{
     font-family: 'Signika Negative', sans-serif;
     text-shadow:-20px 11px 40px black;
 }
-.busquedaGrilla
-{
-    height: 950px;
-}
-.busquedaGrilla__botones
-{
-    position: relative;
-    left: 40%;
-}
-/****MAPA******/
-.mapa {
-    margin-bottom: 2em;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    border-radius: 0.5px;
-}
-
 .contenedorPostulate__Titulo
 {
     font-family: 'Anton', sans-serif;
@@ -425,6 +480,7 @@ h3{
 
 
 /*Adaptar para tablet*/
+
 @media (max-width: 992px)
 {
     .cabecera-Logo

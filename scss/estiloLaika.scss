@@ -62,7 +62,7 @@ ol, ul, dl {
 }
 .btn-primary {
     color: #fff;
-    background-color: #F2B705;
+    background-color: rgba(15, 34, 45, 1);
     border-color: #F2B705;
 }
 .bodyAdoptar
@@ -90,3 +90,8 @@ ol, ul, dl {
 {
     height: 30vh;
 }*/
+.btn-lg, .btn-group-lg > .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
