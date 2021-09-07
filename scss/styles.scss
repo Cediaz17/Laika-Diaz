@@ -124,6 +124,7 @@ a:hover
 .contenedorOpinionUsuario__Foto__Animacion
 {
     transition: all 3s;
+    text-align: center;
 }
 .contenedorOpinionUsuario__Estrellas
 {   
@@ -217,6 +218,19 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 {
     height: 50vh;
 }
+.contenedorQueNecesitas__Titulo {
+    color: #0b0c06;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.contenedorQueNecesitas__TituloPrincipal
+{
+    color: #0b0c06;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
 .tituloCard
 {
 
@@ -263,16 +277,6 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     z-index: 1;
     @include tamText(15px);
 }
-.contenedorPrincipal__Titulo
-{
-    color:$colorLaika;
-    font-family: 'Anton', sans-serif;
-    @include tamText(1.5rem);
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    z-index: 1;
-}
 
 .contenedorPrincipal__Foto {
     @include tam(100%,20%);
@@ -281,12 +285,23 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     max-width: 100%;
     object-fit: cover;
 }
+.contenedorPrincipal__Titulo
+{
+    color:$colorLaika;
+    font-family: 'Anton', sans-serif;
+    @include tamText(3rem);
+    position: absolute;
+    top: 30%;
+    left: 110px;
+    z-index: 1;
+}
 /*Sector de Quienes somos*/
 .contenedorInformativo
 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     background-color:transparent;
     color: white;
     height: 100vh;
@@ -295,6 +310,7 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     color: #0b0c06;
     @include tamText(35px);
     padding-top: 10px;
+    font-weight: bold;
 }
 .contenedorInformativo__Parrafo {
     width: 45vw;
@@ -308,7 +324,7 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 {
     width: 45vw;
     border-radius: 5%;
-    margin:5%;
+    margin: 5% 0 0 0;
     height: 75vh;
 }
 #contenedorInformativo__Columnas
@@ -334,6 +350,15 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
     background: -webkit-linear-gradient(to top, #DBD5A4, #649173);
     background: linear-gradient(to top, #DBD5A4, #649173);
 }
+.contenedorContacto__Titulo {
+    color: #0f222d;
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 350px;
+    z-index: 1;
+}
 .contenedorContacto__Formulario
 {
     display: flex;
@@ -358,16 +383,7 @@ background: linear-gradient(to bottom, #a8e063, #56ab2f);
 {
     @include tam(350px,470px);
 }
-.contenedorPrincipal__Titulo
-{
-    color:$colorLaika;
-    font-family: 'Anton', sans-serif;
-    @include tamText(3rem);
-    position: absolute;
-    top: 30%;
-    left: 130px;
-    z-index: 1;
-}
+
 /*-----------------------------------------------------*/
 /* todos los titulos del footer de la pagina 
 serán color blanco con el tipo de letra verdana con bordes color marron*/
@@ -377,11 +393,6 @@ serán color blanco con el tipo de letra verdana con bordes color marron*/
 }
 .contenedorFooter{
     background: rgb(15,34,45);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 130px;
 }
 
 .contenedorFooter__Linkedin
@@ -392,7 +403,7 @@ justify-content: center;
 }
 .contenedorFooter__Redes-Linkedin
 {
-    @include tam(35px,35px);
+    @include tam(65px,35px);
     margin: 2px;
 }
 .contenedorFooter__Redes
@@ -414,6 +425,30 @@ justify-content: center;
         {
             @include tamText(15px);
         }
+.contenedorFooter__contenido
+{
+    justify-content: center;
+    align-items: center;
+}
+.contenedorFooter__seccion
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-center;
+}
+.contenedorFooter__logo
+{
+    width: 60%;
+}
+.contenedorFooter__imgLogo
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
 /*************************************************/
 
 /*Etiquetas especiales*/
@@ -435,6 +470,10 @@ h2
 }
 h3{
     color: white;
+}
+h1, h3, h4, h5{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
 }
 
 /******* Carousel******/
@@ -485,7 +524,7 @@ h3{
 {
     .cabecera-Logo
     {
-        @include tam(6.5rem,5rem);
+        @include tam(6rem,4.5rem);
     }
     .navbar-nav {
         align-items:flex-start !important;
@@ -496,7 +535,6 @@ h3{
         height: 250px;
     }
 }
-
 /*Adaptar para celu*/
 @media (max-width: 418px)
 {   
@@ -509,25 +547,13 @@ h3{
         align-items: center;
         height: 90%;
         }
-    .contenedorFooter{
-        background-color:#9CA539;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    .contenedorFooter__logo
+        {
+            width: 72%;
+        }
     .cabecera-Logo{
             @include tam(65px, 60px);
             margin-left: 0%;
-    }
-    .contenedorPrincipal__Titulo {
-        color: #0f222d;
-        font-family: 'Anton', sans-serif;
-        @include tamText(1rem);
-        position: absolute;
-        top: 20%;
-        left: 10px;
-        z-index: 1;
     }
     .navbar-nav {
             align-items:flex-start !important;
@@ -539,11 +565,13 @@ h3{
     }
     .contenedorPrincipal__Ancla
     {
-        position: absolute;
-        top: 15%;
-        left: 1%;
-        z-index: 1;
-        font-size: 9px;
+        font-size: 7px;
+    }
+    .contenedorPrincipal__Titulo 
+    {
+        @include tamText(0.9rem);
+        top: 102px;
+        left: 20px;
     }
     .contenedorInformativo
     {
@@ -586,10 +614,33 @@ h3{
     }
     .contenedorOpinionUsuario__Estrellas
     {   
-        @include tam(80px,80px);
-        margin: -40px;
-        bottom: 19%;
+        bottom: 13%;
     }
+    .contenedorOpinionUsuario__Parrafo 
+    {
+        height: 50vh;
+    }
+    /**Contacto*******/
+    .contenedorContacto__Titulo {
+        font-size: 1rem;
+        top: 20%;
+        left: 50px;
+    }
+    #Contacto
+    {
+        margin-left: 10px;
+        justify-content: center;
+    }
+    .contenedorContacto {
+        height: px;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .contenedorContacto__App__Foto
+{
+    @include tam(100px,100px);
+}
+
 
     /**Footer**/
         .contenedorFooter__Redes__Disenio
@@ -600,28 +651,41 @@ h3{
         {
             @include tamText(15px);
         }
-        .contenedorFooter__Linkedin {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 3px;
-        }
-        .contenedorFooter__Redes {
-            width: 45px;
-            height: 45px;
-            flex-flow: nowrap;
-            justify-content: center;
-            margin-left: 20px;
+        .contenedorFooter__Redes 
+        {
+            width: 60px;
+            height: 50px;
         }
         .contenedorFooter__Redes-Linkedin {
-            width: 50%;
+            width: 30%;
             margin-right: 5px;
         }
 
 }
-
-@media (min-width: 419px) and (max-width: 768px)
+@media (min-width: 419px) and (max-width: 767px)
 {
+    /**Contacto*******/
+    .contenedorContacto__Titulo 
+    {
+        font-size: 1rem;
+        top: 20%;
+        left: 50px;
+    }
+        /**Footer*******/
+    .contenedorFooter__logo
+    {
+        width: 80%;
+    }
+    .contenedorFooter__Redes-Linkedin 
+    {
+        width: 80px;
+        margin-top: 20px;
+    }
+    .contenedorFooter__Redes 
+    {
+        width: 70px;
+    }
+    /**Publicados*******/
 .contenedorPublicados__Articulo {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -635,39 +699,23 @@ h3{
     {
         align-items:flex-start !important;
     }
-    .contenedorPrincipal__Titulo {
-        color: #0f222d;
-        font-family: 'Anton', sans-serif;
-        @include tamText(1.5rem);
-        position: absolute;
+    .contenedorPrincipal__Titulo 
+    {
+        @include tamText(1rem);
         top: 19%;
-        left: 20px;
-        z-index: 1;
+        left: 10px;
     }
     .contenedorPrincipal__Ancla
     {
-        font-family: 'Anton', sans-serif;
-        @include tamText(1rem);
-        position: absolute;
-        top: 19%;
-        left: 20px;
-        z-index: 1;
+        font-size: 0.5rem;
+        top: 84px;
+        left: 4px;
     }
     .contenedorOpinionUsuario__Foto
     {
         width: 90%;
         border-radius: 10%;
         margin: 5%;
-    }
-    .contenedorFooter
-    {
-        background-color: $colorLaika;
-        @include tam(100%, 20vh);
-        position: sticky;
-        top: 0px;
-        z-index: 2;
-        display: flex;
-        justify-content: space-between;
     }
     .formatoNav_lista
     {
@@ -708,8 +756,26 @@ h3{
         -webkit-text-stroke: 0.5px black;
         margin-left: 1.5rem;
     }
-
-    
+    .contenedorInformativo 
+    {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+    .contenedorInformativo__Foto 
+    {
+        width: 70vw;
+        height: 49vh;
+    }
+    .contenedorInformativo__Parrafo 
+    {
+        width: 80vw;
+        padding-left:0;
+    }
     .contenedorOpinionUsuario
     {
     width: 85%;
@@ -723,13 +789,160 @@ h3{
     margin-right: 10%;
     margin-bottom: 10px;
     }
-    .parrafoFormato {
-        width: 45vw;
-        padding-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #linkedin a
+    {
+        display: none;
+    }
+    #legales
+    {
+        display: none;
+    }
+    .navbar-collapse 
+    {
+        background: $colorLaika;
+        height: 230px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    /**Contacto*******/
+    .contenedorContacto__Titulo 
+    {
+        font-size: 1rem;
+        top: 20%;
+        left: 50px;
+    }
+        /**Footer*******/
+    .contenedorFooter__logo
+    {
+        width: 80%;
+    }
+    .contenedorFooter__Redes-Linkedin 
+    {
+        width: 80px;
+        margin-top: 20px;
+    }
+    .contenedorFooter__Redes 
+    {
+        width: 70px;
+    }
+    /**Publicados*******/
+    .contenedorPublicados__Articulo 
+    {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    }
+    .navbar-nav 
+    {
+        align-items:flex-start !important;
+    }
+    .contenedorPrincipal__Titulo 
+    {
+        @include tamText(1.7rem);
+        top: 21%;
+        left: 14px;
+    }
+    .contenedorPrincipal__Ancla 
+    {
+            font-size: 0.7rem;
+            top: 85px;
+            left: 1px;
+    }
+    .contenedorOpinionUsuario__Foto
+    {
+        width: 80%;
+        border-radius: 10%;
         margin: 5%;
+    }
+    .contenedorOpinionUsuario__Estrellas
+    {
+        bottom: -7%;
+    }
+    .formatoNav_lista
+    {
+        list-style: none;
+        list-style-position: initial;
+        list-style-type: none;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    li {
+        display: inline-block;
+    }
+    #menu ul ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        right: 10px;
+        background: #be201f;
+        padding: 0;
+    }
+    #menu ul ul li {
+        float: none;
+        width: auto;
+    }
+    #menu ul ul a 
+    {
+        line-height: 120%;
+        padding: 15px 20px;
+    }
+    #menu ul li:hover > ul 
+    {
+        display: block;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+        margin-left: 1.5rem;
+    }
+    .contenedorInformativo 
+    {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+    .contenedorInformativo__Foto 
+    {
+        width: 80vw;
+        height: 60vh;
+    }
+    .contenedorInformativo__Parrafo 
+    {
+        width: 80vw;
+        padding-left:0;
+        text-align: center;
+    }
+    .contenedorOpinionUsuario
+    {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2B705;
+    color: #08080c;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    }
+    .contenedorOpnionUsuario__contenido {
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorOpinionUsuario__Parrafo 
+    {
+        height: 30vh;
     }
     #linkedin a
     {
@@ -742,10 +955,30 @@ h3{
     .navbar-collapse 
     {
         background: $colorLaika;
-        height: 200px;
+        height: 230px;
     }
 }
-
+@media (min-width: 1024px) and (max-width: 1255px)
+{
+    .cabecera-Logo {
+        width: 5rem;
+        height: 5rem;
+    }
+    .navbar
+    {
+    font-size: 15px;
+    }
+    .contenedorPrincipal__Titulo 
+    {
+        font-size: 2rem;
+        top: 150px;
+        left: 90px;
+    }
+    .contenedorOpinionUsuario__Estrellas
+    {
+        bottom: -5%;
+    }
+}
 $redesSociales: (
     facebook: "../imagenes/facebook.png",
     twitter: "../imagenes/twitter.png",

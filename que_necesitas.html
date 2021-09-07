@@ -108,19 +108,18 @@
             </div>   
         </section>
         <section class="busquedaGrilla"> <!--section de mapa y rticulos -->
-            <h1 class="text-center">Qué necesitas para tu mascota?</h1>
+            <h1 class="text-center contenedorQueNecesitas__TituloPrincipal">Qué necesitas para tu mascota?</h1>
             <div class="busquedaGrilla__botones btn-group btn-group-lg">
                 <button type="button" class="btn btn-primary">Veterinarias</button>
                 <button type="button" class="btn btn-primary">Paseadores</button>
                 <button type="button" class="btn btn-primary">PetShop</button>
             </div> 
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26209.673225875955!2d-58.40937436817058!3d-34.800679506223645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1625278902171!5m2!1ses-419!2sar" 
-                width="85%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26215.39302472575!2d-58.40360547450788!3d-34.78268529510133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sveterinaria!5e0!3m2!1ses-419!2sar!4v1630723915131!5m2!1ses-419!2sar"width="85%" height="400" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
             </div>
             <div class="container-fluid contenedorQueNecesitas">
                 <divc class="row">
-                    <h2 class="titulo_main_color_oscuro text-center contenedorInformativo__Titulo">Más Populares</h2>
+                    <h2 class="titulo_main_color_oscuro text-center contenedorQueNecesitas__Titulo">Más Populares</h2>
                     <div class="col-3">
                         <div class="card" style="width:300px">
                             <img class="card-img-top" src="imagenes/vet1.jpg" width="400px" height="175px" alt="Card image">
@@ -167,37 +166,45 @@
     </main>
     <!--pie de pagina-->
     <footer class="contenedorFooter">
-        <!--pie de pagina-->
-        <section>
-            <img src="imagenes/logo.png" alt="Logo" class="cabecera-Logo">
-        </section>
         <div class="container">
-            <div class="contenedorFooter__Linkedin">
-                <div class="">
-                    <span>Sitio Web Creado Por Cecilia Diaz ® </span>
-                    <a href="https://www.linkedin.com/in/cecilia-diaz-890a62159/" target="_blank">
-                </div>
-                    <div class="contenedorFooter__Redes-Linkedin">
-                        <img class="linkedinLogo img-fluid" alt="logo"></a>
+            <div class="contenedorFooter__contenido row">
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="contenedorFooter__logo">
+                        <img src="imagenes/logoLaika.png" alt="Logo" class="contenendorFooter__imgLogo img-fluid">
                     </div>
+                </section>
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="container">
+                        <div class="contenedorFooter__Linkedin contenedorFooter__contenido row">
+                            <div class="">
+                                <span>Sitio Web Creado Por Cecilia Diaz ® </span>
+                                <a href="https://www.linkedin.com/in/cecilia-diaz-890a62159/" target="_blank">
+                            </div>
+                                <div class="contenedorFooter__Redes-Linkedin">
+                                    <img class="linkedinLogo img-fluid" alt="logo"></a>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contenedorFooter__seccion col-md-4 col-10">
+                    <div class="contenedorFooter__Redes__Disenio animate__animated animate__pulse wow bounceInUp">
+                        <h3 class="contenedorFooter__Redes__text">Seguinos en nuestra redes</h3>
+                        <section class="container-fluid">
+                            <div class="row contenedorFooter__Redes contenedorFooter__contenido">
+                                <div>
+                                    <a href="https://es-la.facebook.com/" target="_blank"><img  class="facebookLogo img-fluid" alt="Logo Fb"></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.instagram.com/?hl=es" target="_blank"><img alt="Logo Ig" class="instagramLogo img-fluid"></a>
+                                </div>
+                                <div>
+                                    <a href="https://twitter.com/?lang=es" target="_blank"><img alt="Logo Tw" class="twitterLogo img-fluid"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
             </div>
-        </div>
-        <!--Logos redes sociales-->
-        <div class="contenedorFooter__Redes__Disenio animate__animated animate__pulse wow bounceInUp">
-            <h3 class="contenedorFooter__Redes__text">Seguinos en nuestra redes</h3>
-            <section class="container-fluid">
-                <div class="row contenedorFooter__Redes">
-                    <div>
-                        <a href="https://es-la.facebook.com/" target="_blank"><img  class="facebookLogo img-fluid" alt="Logo Fb"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img alt="Logo Ig" class="instagramLogo img-fluid"></a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/?lang=es" target="_blank"><img alt="Logo Tw" class="twitterLogo img-fluid"></a>
-                    </div>
-                </div>
-            </section>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
