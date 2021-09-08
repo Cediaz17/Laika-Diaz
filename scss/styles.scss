@@ -476,7 +476,7 @@ h1, h3, h4, h5{
     font-weight: bold;
 }
 
-/******* Carousel******/
+/******* Carousel y ANTES DE ADOPTAR******/
 .carousel_Titulo
 {
     @include tamText(55px);
@@ -497,10 +497,74 @@ h1, h3, h4, h5{
 {
     font-family: 'Anton', sans-serif;
     @include tamText(3rem);
-    position: absolute;
-    top: 750px;
-    left: 650px;
     z-index: 1;
+    padding-top: 100px;
+    padding-left: 300px;
+}
+.adoptar__ImagenPrincipal
+{
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    background-image: url("../imagenes/adoptar.jpg");
+    height: 100vh;
+}
+.contenedorIntro
+{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1em 4em;
+        margin-top: 2em;
+        font-size: 30px;
+        color: black;
+        font-family: 'Signika Negative', sans-serif;
+        text-shadow: -20px 11px 40px #e9ecef;
+}
+.contenedorFormularioAdoptar
+{
+    border: solid 3px #BE201F;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 75%;
+    color: #F2D95C;
+    background-color: $colorLaika;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.contenedorFormularioAdoptar__Fila
+{
+    text-align: center;
+}
+.contenedorFormularioAdoptar__Fila__Valor
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    div
+    {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+.contenedorFormularioAdoptar__Basicas
+{
+    margin-bottom: 7px;
+}
+.contenedorFormularioAdoptar__Basicas__Titulo
+{
+    font-family: cursive;
+    margin-bottom: 16px;
+    @include tamText(2.5rem);
+}
+.contenedorFormularioAdoptar__Datos__Titulo
+{
+    font-family: cursive;
+    margin-bottom: 16px;
+    @include tamText(2rem);
 }
 /* Posible paleta de colores*/
 .ab{ color: verdeFondo; }
