@@ -504,20 +504,20 @@ h1, h3, h4, h5 {
 
 .contenedorIntro {
   font-size: 1.5rem;
-  text-align: center;
+  text-align: start;
   padding: 1em 4em;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 30px;
   color: black;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Fredoka One', cursive;
   text-shadow: -20px 11px 40px #e9ecef; }
 
 .contenedorFormularioAdoptar {
-  border: solid 3px #BE201F;
+  border: solid 5px yellowgreen;
   border-radius: 20px;
   margin: 0 auto;
-  width: 75%;
-  color: #F2D95C;
+  width: 72%;
+  color: #F2B705;
   background-color: #0f222d;
   font-size: 1.2rem;
   margin-bottom: 1rem; }
@@ -525,11 +525,36 @@ h1, h3, h4, h5 {
 .contenedorFormularioAdoptar__Fila {
   text-align: center; }
 
+.botones {
+  background-color: #D88900;
+  border: solid 1px gold;
+  padding-top: 0.30rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.30rem;
+  padding-left: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: white; }
+
+.botones__Postularse {
+  font-family: cursive;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.botones__Eliminar {
+  font-family: cursive;
+  width: 40%;
+  margin-top: 43px; }
+
 .contenedorFormularioAdoptar__Fila__Valor {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto; }
+  .contenedorFormularioAdoptar__Fila__Valor label {
+    text-align: start; }
   .contenedorFormularioAdoptar__Fila__Valor div {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -546,7 +571,8 @@ h1, h3, h4, h5 {
 .contenedorFormularioAdoptar__Datos__Titulo {
   font-family: cursive;
   margin-bottom: 16px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-decoration: underline; }
 
 /* Posible paleta de colores*/
 .ab {
