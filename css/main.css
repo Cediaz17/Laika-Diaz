@@ -248,13 +248,23 @@ a:hover {
 
 /*******************Seccion Que necesitas**************************/
 .contenedorQueNecesitas {
-  height: 50vh; }
+  text-align: -webkit-center;
+  margin: 3rem;
+  border: solid 2px black;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 95%; }
 
 .contenedorQueNecesitas__Titulo {
   color: #0b0c06;
   font-size: 35px;
   margin-bottom: 30px;
-  margin-top: 10px; }
+  /* margin-top: 0px; */
+  font-family: unset;
+  text-decoration: underline; }
+
+.contenedorQueNecesitas__Populares {
+  margin-bottom: 15px; }
 
 .contenedorQueNecesitas__TituloPrincipal {
   color: #0b0c06;
@@ -284,8 +294,7 @@ a:hover {
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
-  border-radius: 0.5px; }
+  text-align: center; }
 
 /*******************Seccion nicial**************************/
 .contenedorPrincipal {
