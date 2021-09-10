@@ -189,9 +189,9 @@ a:hover {
 
 /*-----------------------Publicados------------------------------*/
 .contenedorPublicados {
-  background: #56ab2f;
-  background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);
-  background: linear-gradient(to bottom, #a8e063, #56ab2f); }
+  background: #F7971E;
+  background: -webkit-linear-gradient(to left, #FFD200, #F7971E);
+  background: linear-gradient(to left, #FFD200, #F7971E); }
 
 .contenedorPublicados__Columnas {
   display: flex;
