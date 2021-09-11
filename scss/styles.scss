@@ -154,15 +154,11 @@ a:hover
     background: #F7971E;  
 background: -webkit-linear-gradient(to left, #FFD200, #F7971E);  
 background: linear-gradient(to left, #FFD200, #F7971E);
-
-    //background: #56ab2f; 
-//background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f); 
-//background: linear-gradient(to bottom, #a8e063, #56ab2f); 
 }
 .contenedorPublicados__Filas
 {
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
     justify-content: center;
     align-items: center;
 }
@@ -204,14 +200,26 @@ background: linear-gradient(to left, #FFD200, #F7971E);
     border-radius: 5%;
     height: 65vh;
     margin-left: 19%;
+    transition: all 3s;
 }
-
 .contenedorPublicados__FotoLeft 
 {
     width: 30vw;
     border-radius: 5%;
     height: 65vh;
     margin-top: 25px;
+    transition: all 3s;
+}
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 2s;
+}
+.contenedorPublicados__Foto:hover
+{
+    transform: scale(1.1, 1.1);
+}
+.contenedorPublicados__FotoLeft:hover
+{
+    transform: scale(1.1, 1.1);
 }
 .contenedorPublicados__Texto
 {
