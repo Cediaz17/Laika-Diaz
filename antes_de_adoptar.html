@@ -9,8 +9,10 @@
     <title>Laika | Antes de Adoptar</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet"href="css/animate.min.css"/>
-    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,600;1,600;1,700&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="bodyAdoptar">
     <!--navegador entre las diferentes paginas /menu-->
@@ -91,150 +93,152 @@
                 <fieldset class="contenedorFormularioAdoptar__Basicas">
                     <legend class="text-center contenedorFormularioAdoptar__Basicas__Titulo">Preguntas basicas de adopción</legend>
                     <div class="row contenedorFormularioAdoptar__Fila">
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion1">¿Que clase de vivienda tenés?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion1" class="botones">
+                                    <option value="Edificio">Edificio</option>
+                                    <option value="Casa baja">Casa baja</option>
+                                    <option value="Chalet">Chalet</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion2">¿La vivienda es de tu propiedad?
+                                </label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion2" class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion3">¿Crees tener suficiente espacio?</label>
                                 <div class="col-12">
-                                    <label for="seleccion1">¿Que clase de vivienda tenés?</label>
-                                </div>
-                                <div class="col-12">
-                                    <select name="Seleccion" id="seleccion1" class="botones">
-                                        <option value="Edificio">Edificio</option>
-                                        <option value="Casa baja">Casa baja</option>
-                                        <option value="Chalet">Chalet</option>
+                                    <select name="Seleccion" id="seleccion3" class="botones">
+                                        <option value="Mucho">Mucho</option>
+                                        <option value="Poco">Poco</option>
+                                        <option value="Nada">Nada</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                                <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                    <div class="col-12">
-                                        <label for="seleccion2">¿La vivienda es de tu propiedad?
-                                        </label>
-                                    </div>
-                                    <div class="col-12">
-                                        <select name="Seleccion" id="seleccion2" class="botones">
-                                            <option value="Si">Si</option>
-                                            <option value="No">No</option>
-                                        </select>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                <div class="col-12">
-                                    <label for="seleccion3">¿Consideras tener espacio?</label>
-                                    <div class="col-12">
-                                        <select name="Seleccion" id="seleccion3" class="botones">
-                                            <option value="Mucho">Mucho</option>
-                                            <option value="Poco">Poco</option>
-                                            <option value="Nada">Nada</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="row contenedorFormularioAdoptar__Fila">
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                    <div class="col-12">
-                                        <label for="seleccion1">¿Contas con seguridad en tu vivienda?</label>
-                                    </div>
-                                    <div class="col-12">
-                                        <select name="Seleccion" id="seleccion1" class="botones">
-                                            <option value="Si">Si</option>
-                                            <option value="No">No</option>
-                                        </select>
-                                    </div>
-                            </div> 
-                        </div>
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                <div class="col-12">
-                                    <label for="seleccion1">¿Hay niños o personas de edad avanzada?</label>
-                                </div>
-                                <div class="col-12">
-                                    <select name="Seleccion" id="seleccion1" class="botones">
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                    </select>
-                                </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion1">¿Contas con seguridad en tu vivienda?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion1" class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                <div class="col-12">
-                                    <label for="seleccion1">¿Aceptarán a tu
-                                    mascota cuándo nazca el bebé?</label>
-                                </div>
-                                <div class="col-12">
-                                    <select name="Seleccion" id="seleccion1 " class="botones">
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        <option value="Nose">Nose</option>
-                                    </select>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="row contenedorFormularioAdoptar__Fila">
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                    <div class="col-12">
-                                        <label for="seleccion4">¿Contas con mascotas en tu hogar?</label>
-                                    </div>
-                                    <div class="col-12">
-                                        <select name="Seleccion4" class="botones" id="seleccion4">
-                                            <option value="Si">Si</option>
-                                            <option value="No">No</option>
-                                        </select>
-                                    </div>
-                            </div> 
-                        </div>
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                <div class="col-12">
-                                    <label for="seleccion8">¿Alguno es alérgico al pelo de mascotas?</label>
-                                </div>
-                                <div class="col-12">
-                                    <select name="Seleccion" id="seleccion8" class="botones">
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                    </select>
-                                </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion1">¿Hay niños o personas de edad avanzada?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion1" class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="row contenedorFormularioAdoptar__Fila__Valor">
-                                <div class="col-12">
-                                    <label for="seleccion9">¿Aceptarían un hermanito/a de tu mascota?</label>
-                                </div>
-                                <div class="col-12">
-                                    <select name="Seleccion" id="seleccion9" class="botones">
-                                        <option value="Si">Si</option>
-                                        <option value="No">No</option>
-                                        <option value="Nose">Nose</option>
-                                    </select>
-                                </div>
-                            </div> 
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion1">¿Aceptarán al
+                                animal cuándo nazca el bebé?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion1 " class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                    <option value="Nose">Nose</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion4">¿Contas con mascotas en tu hogar?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion4" class="botones" id="seleccion4">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion8">¿Alguno es alérgico al pelo de mascotas?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion8" class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 contenedorFormularioAdoptar__Fila__Valor">
+                            <div>
+                                <label for="seleccion9">¿Aceptarían un hermanit@ de tu mascota?</label>
+                            </div>
+                            <div>
+                                <select name="Seleccion" id="seleccion9" class="botones">
+                                    <option value="Si">Si</option>
+                                    <option value="No">No</option>
+                                    <option value="Nose">Nose</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset>
                     <hr>
                     <legend class="text-center contenedorFormularioAdoptar__Datos__Titulo">Datos Personales </legend>
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row contenedorFormularioAdoptar__Fila">
+                        <div class="col-12 col-md-4">
                             <div class="row contenedorFormularioAdoptar__Fila">
                                 <div class="col-12 contenedorFormularioAdoptar__Fila__Valor text-start">
                                     <label for="nombre"> Nombre y Apellido: </label>
                                 </div>
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
+                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor" style="margin-top: 0.7rem;">
                                     <input type="text" id="nombre" name="nombre" placeholder="Bruno Paz"  class="form-control botones">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-4">
+                            <div class="row contenedorFormularioAdoptar__Fila">
+                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor text-start">
+                                    <label for="localidad">Localidad:</label>
+                                </div>
+                            </div>
+                            <div class="row contenedorFormularioAdoptar__Fila">
+                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
+                                    <input type="text" name="Ingresá tu Localidad" placeholder="Lomas de Zamora, Buenos Aires" class="form-control botones">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="row contenedorFormularioAdoptar__Fila">
+                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor text-start">
+                                    <label for="correo">Correo Electronico:</label>
+                                </div>
+                            </div>
+                            <div class="row contenedorFormularioAdoptar__Fila">
+                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
+                                    <input type="email" name="Ingresá tu Correo" placeholder="Bruno-Paz@gmail.com" class="form-control botones ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
                             <div class="row contenedorFormularioAdoptar__Fila">
                                 <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
                                     <label for="seleccion1">Seleccioná Especie</label>
@@ -250,50 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor text-start">
-                                    <label for="localidad">Localidad:</label>
-                                </div>
-                            </div>
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
-                                    <input type="text" name="Ingresá tu Localidad" placeholder="Lomas de Zamora, Buenos Aires" class="form-control botones">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
-                                    <label for="sexo">Seleccioná el Sexo</label>
-                                </div>
-                            </div>
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12">
-                                    <select name="Sexo" id="sexo" class="botones">
-                                        <option value="Femenino">Femenino</option>
-                                        <option value="Masculino">Masculino</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor text-start">
-                                    <label for="correo">Correo Electronico:</label>
-                                </div>
-                            </div>
-                            <div class="row contenedorFormularioAdoptar__Fila">
-                                <div class="col-12 contenedorFormularioAdoptar__Fila__Valor">
-                                    <input type="email" name="Ingresá tu Correo" placeholder="Bruno-Paz@gmail.com" class="form-control botones ">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 btn">
+                        <div class="col-12 col-md-4 btn">
                             <div class="contenedorFormularioAdoptar__Fila">
                                 <input type="reset"  value="Borrar Campos" class=" botones botones__Eliminar btn-outline-danger  form-control">
                             </div>

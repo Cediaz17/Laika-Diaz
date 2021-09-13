@@ -82,7 +82,7 @@ ol, ul, dl {
   list-style: none;
   text-decoration: none; }
 
-.body {
+.bodyContacto {
   background-color: #ADBF34; }
 
 /*-----------------------------------------------------*/
@@ -118,16 +118,6 @@ li {
   display: block; }
 
 /*-----------------------------------------------------*/
-/* Titulo principial de la Pagina*/
-.tituloDos {
-  color: #0f222d;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2rem;
-  position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  z-index: 2; }
-
 /*-----------------------------------------------------*/
 /*tranformaciones*/
 a:hover {
@@ -217,15 +207,12 @@ a:hover {
 
 .contenedorPublicados__Titulo {
   color: #0f222d;
-  font-family: 'Anton', sans-serif;
   font-size: 2.5rem;
   z-index: 1;
   margin-top: 20px; }
 
 .contenedorPublicados__Parrafo {
   width: 40vw;
-  /*display: flex;
-    flex-direction: column;*/
   margin-bottom: 0.2rem; }
 
 .contenedorPublicados__Foto {
@@ -289,7 +276,6 @@ a:hover {
   font-size: 35px;
   margin-bottom: 30px;
   /* margin-top: 0px; */
-  font-family: unset;
   text-decoration: underline; }
 
 .contenedorQueNecesitas__Populares {
@@ -325,7 +311,7 @@ a:hover {
   margin-left: auto;
   text-align: center; }
 
-/*******************Seccion nicial**************************/
+/*******************Seccion nicial contactp**************************/
 .contenedorPrincipal {
   margin: 0; }
 
@@ -346,14 +332,12 @@ a:hover {
 
 .contenedorPrincipal__Titulo {
   color: #0f222d;
-  font-family: 'Anton', sans-serif;
   font-size: 3rem;
   position: absolute;
   top: 30%;
   left: 110px;
   z-index: 1; }
 
-/*Sector de Quienes somos*/
 .contenedorInformativo {
   display: flex;
   flex-direction: row;
@@ -392,10 +376,16 @@ a:hover {
 #contenedorInformativo__Parrafo__Diseño {
   grid-area: contenedorInformativo__Parrafo__Diseño; }
 
-/*******************************************************************/
-/****************************diseño del formulario-****************/
+/****************************diseño del formulario Contacto-****************/
+.contacto__ImagenPrincipal {
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-image: url("../imagenes/cute-little-dog-impersonating-business-person.jpg");
+  height: 100vh; }
+
 .contenedorContacto {
-  height: 90vh;
   padding-top: 10px;
   background: #649173;
   background: -webkit-linear-gradient(to top, #DBD5A4, #649173);
@@ -403,11 +393,9 @@ a:hover {
 
 .contenedorContacto__Titulo {
   color: #0f222d;
-  font-family: 'Anton', sans-serif;
-  font-size: 3rem;
   position: absolute;
   top: 30%;
-  left: 350px;
+  left: 300px;
   z-index: 1; }
 
 .contenedorContacto__Formulario {
@@ -415,21 +403,20 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: black;
-  height: 70vh;
-  padding-top: 65px; }
+  color: black; }
 
 .contenedorContacto__Formulario__Disenio {
   margin-top: 15px;
-  border: 2px solid #BE201F;
   padding: 5%; }
+  .contenedorContacto__Formulario__Disenio fieldset h3 {
+    font-family: 'Mali', cursive; }
 
-.contenedorContacto__App {
-  height: 70vh; }
+.contenedorContacto__App div h3 {
+  font-family: 'Mali', cursive; }
 
 .contenedorContacto__App__Foto {
-  width: 350px;
-  height: 470px; }
+  width: 27vw;
+  height: 73vh; }
 
 /*-----------------------------------------------------*/
 /* todos los titulos del footer de la pagina 
@@ -500,15 +487,17 @@ li a {
   margin-left: 1.5rem; }
 
 h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Mali', cursive;
   font-size: 16px; }
 
 h3 {
   color: white; }
 
-h1, h3, h4, h5 {
-  font-family: 'Signika Negative', sans-serif;
-  font-weight: bold; }
+h1 {
+  font-family: 'Mali', cursive;
+  /*font-family: 'Signika Negative', sans-serif;*/
+  font-weight: bold;
+  font-size: 3rem; }
 
 /******* Carousel y ANTES DE ADOPTAR******/
 .carousel_Titulo {
@@ -526,11 +515,10 @@ h1, h3, h4, h5 {
   text-shadow: -20px 11px 40px black; }
 
 .contenedorPostulate__Titulo {
-  font-family: 'Anton', sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   z-index: 1;
   padding-top: 100px;
-  padding-left: 300px; }
+  padding-left: 404px; }
 
 .adoptar__ImagenPrincipal {
   background-color: #cccccc;
@@ -545,7 +533,6 @@ h1, h3, h4, h5 {
   text-align: start;
   padding: 1em 4em;
   margin-top: 1em;
-  font-size: 30px;
   color: black;
   font-family: 'Fredoka One', cursive;
   text-shadow: -20px 11px 40px #e9ecef; }
@@ -554,14 +541,16 @@ h1, h3, h4, h5 {
   border: solid 5px yellowgreen;
   border-radius: 20px;
   margin: 0 auto;
-  width: 72%;
+  width: 76%;
   color: #F2B705;
   background-color: #0f222d;
   font-size: 1.2rem;
   margin-bottom: 1rem; }
 
 .contenedorFormularioAdoptar__Fila {
-  text-align: center; }
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
 
 .botones {
   background-color: #D88900;
@@ -587,8 +576,8 @@ h1, h3, h4, h5 {
   margin-top: 43px; }
 
 .contenedorFormularioAdoptar__Fila__Valor {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   margin-left: auto;
   margin-right: auto; }
   .contenedorFormularioAdoptar__Fila__Valor label {
@@ -657,6 +646,29 @@ h1, h3, h4, h5 {
 
 /*Adaptar para celu*/
 @media (max-width: 418px) {
+  /*Que necesitas*/
+  .card__contenedor {
+    width: 75vw;
+    margin-bottom: 1rem; }
+  .contenedorQueNecesitas__Titulo {
+    font-size: 2rem; }
+  .contenedorQueNecesitas {
+    margin: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 95vw; }
+  .contenedorQueNecesitas__TituloPrincipal {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.2rem 0.1rem;
+    font-size: 0.9em;
+    border-radius: 1.5rem; }
+  .busquedaGrilla__botones {
+    margin-bottom: 1em;
+    margin-top: 1em; }
+  /*Publicados*/
   .contenedorPublicados__Articulo {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -665,6 +677,32 @@ h1, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     height: 90%; }
+  .contenedorPublicados__Filas {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem; }
+  .contenedorPublicados__Articulo-Titulo {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em; }
+  .contenedorPublicados__Articulo-Titulo h3 {
+    font-size: 1.8rem; }
+  .contenedorPublicados__Parrafo {
+    width: 85vw;
+    margin-bottom: 0.2rem; }
+  .contenedorPublicados__Foto {
+    width: 75vw;
+    border-radius: 5%;
+    height: 51vh;
+    margin-left: 0px;
+    transition: all 3s; }
+  .contenedorPublicados__FotoLeft {
+    width: 75vw;
+    border-radius: 5%;
+    height: 51vh;
+    margin-left: 0px;
+    transition: all 3s; }
+  .publicadosBottom {
+    margin-bottom: 1.3rem; }
   .contenedorFooter__logo {
     width: 72%; }
   .cabecera-Logo {
@@ -714,22 +752,21 @@ h1, h3, h4, h5 {
     bottom: 13%; }
   .contenedorOpinionUsuario__Parrafo {
     height: 50vh; }
-  /**Contacto*******/
+  /**************Contacto**************/
   .contenedorContacto__Titulo {
-    font-size: 1rem;
-    top: 20%;
+    font-size: 2.5rem;
     left: 50px; }
   #Contacto {
-    margin-left: 10px;
     justify-content: center; }
   .contenedorContacto {
-    height: px;
-    width: 100%;
-    padding-top: 10px; }
+    width: 100%; }
+  .contenedorContacto__Formulario__Disenio {
+    margin-top: 0;
+    padding: 0; }
   .contenedorContacto__App__Foto {
-    width: 100px;
-    height: 100px; }
-  /**Footer**/
+    width: 44vw;
+    height: 45vh; }
+  /*************Footer*************/
   .contenedorFooter__Redes__Disenio {
     margin: 1%; }
   .contenedorFooter__Redes__text {
@@ -739,14 +776,71 @@ h1, h3, h4, h5 {
     height: 50px; }
   .contenedorFooter__Redes-Linkedin {
     width: 30%;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  /*Antes de Adoptar*/
+  .contenedorPostulate__Titulo {
+    font-size: 3.5rem;
+    padding-top: 174px;
+    padding-left: 0px;
+    text-shadow: 77px 11px 40px #e9ecef; }
+  .adoptar__ImagenPrincipal {
+    filter: brightness(0.8);
+    opacity: 1; }
+  .contenedorIntro {
+    font-size: 1.1rem;
+    padding: 1em 2.5em; }
+  .contenedorFormularioAdoptar {
+    border-radius: 10px;
+    width: 85%;
+    font-size: 0.9rem; }
+  .contenedorFormularioAdoptar__Basicas__Titulo {
+    font-size: 1.5rem; }
+  .botones {
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    font-size: 0.7rem;
+    padding-left: 0;
+    padding-right: 0; }
+  .botones__Eliminar {
+    font-family: cursive;
+    width: 48%;
+    margin-top: 43px; }
+  .contenedorFormularioAdoptar__Fila__Valor label {
+    text-align: -webkit-left; }
+  .botones__Eliminar {
+    margin-top: 20px; } }
 
 @media (min-width: 419px) and (max-width: 767px) {
+  /*Que necesitas*/
+  .card__contenedor {
+    width: 75vw;
+    margin-bottom: 1rem; }
+  .contenedorQueNecesitas__Titulo {
+    font-size: 2rem; }
+  .contenedorQueNecesitas {
+    margin: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 95vw; }
+  .contenedorQueNecesitas__TituloPrincipal {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.2rem 0.1rem;
+    font-size: 0.9em;
+    border-radius: 1.5rem; }
+  .busquedaGrilla__botones {
+    margin-bottom: 1.2em;
+    margin-top: 1.2em; }
   /**Contacto*******/
   .contenedorContacto__Titulo {
     font-size: 1rem;
     top: 20%;
     left: 50px; }
+  .contenedorContacto__App__Foto {
+    width: 38vw;
+    height: 54vh; }
   /**Footer*******/
   .contenedorFooter__logo {
     width: 80%; }
@@ -764,6 +858,25 @@ h1, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     height: 90%; }
+  .contenedorPublicados__Texto {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  .contenedorPublicados__Parrafo {
+    width: 90vw; }
+  .contenedorPublicados__Foto {
+    width: 75vw;
+    height: 65vh;
+    margin-left: 0; }
+  .contenedorPublicados__Filas {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; }
+  .contenedorPublicados__Texto__Left {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; }
+  .contenedorPublicados__FotoLeft {
+    width: 75vw; }
+  .publicadosBottom {
+    margin-bottom: 1.5rem; }
   .navbar-nav {
     align-items: flex-start !important; }
   .contenedorPrincipal__Titulo {
@@ -837,14 +950,48 @@ h1, h3, h4, h5 {
     display: none; }
   .navbar-collapse {
     background: #0f222d;
-    height: 230px; } }
+    height: 230px; }
+  /*Antes de Adoptar*/
+  .contenedorPostulate__Titulo {
+    font-size: 3.5rem;
+    padding-top: 257px;
+    padding-left: 0px;
+    text-shadow: 77px 11px 40px #e9ecef;
+    color: black; }
+  .adoptar__ImagenPrincipal {
+    filter: brightness(0.8);
+    opacity: 1; }
+  .contenedorIntro {
+    font-size: 1.3rem;
+    padding: 1em 2em; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  /*Antes de Adoptar*/
+  .contenedorQueNecesitas {
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 95%; }
+  .card__contenedor {
+    margin-bottom: 1rem; }
+  /**Antes de Adoptar*******/
+  .contenedorFormularioAdoptar {
+    width: 85%; }
+  .botones__Eliminar {
+    width: 72%;
+    margin-top: 30px; }
   /**Contacto*******/
   .contenedorContacto__Titulo {
     font-size: 1rem;
     top: 20%;
     left: 50px; }
+  .contenedorContacto__Titulo {
+    font-size: 3rem;
+    top: 40%;
+    left: 407px; }
+  .contenedorContacto__App__Foto {
+    width: 27vw;
+    height: 60vh; }
   /**Footer*******/
   .contenedorFooter__logo {
     width: 80%; }
@@ -862,6 +1009,22 @@ h1, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     height: 90%; }
+  .contenedorPublicados__Parrafo {
+    width: 80vw; }
+  .contenedorPublicados__Texto {
+    font-size: 1.4rem; }
+  .contenedorPublicados__Foto {
+    width: 70vw;
+    margin-left: 0;
+    height: 75vh; }
+  .publicadosBottom {
+    font-size: 1.5rem;
+    margin-bottom: 2rem; }
+  .contenedorPublicados__FotoLeft {
+    width: 70vw;
+    height: 75vh; }
+  .contenedorPublicados__Texto__Left {
+    font-size: 1.4rem; }
   .navbar-nav {
     align-items: flex-start !important; }
   .contenedorPrincipal__Titulo {
@@ -946,6 +1109,42 @@ h1, h3, h4, h5 {
     height: 230px; } }
 
 @media (min-width: 1024px) and (max-width: 1255px) {
+  /*Que necesitas*/
+  .contenedorQueNecesitas {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .card__contenedor {
+    margin-bottom: 1rem; }
+  /****Publicados*****/
+  .contenedorPublicados__Titulo h1 {
+    font-size: 3.5rem; }
+  .contenedorPublicados__Texto {
+    font-size: 1.4rem; }
+  .contenedorPublicados__Articulo-Titulo h3 {
+    font-size: 3rem; }
+  .contenedorPublicados__Foto {
+    width: 45vw;
+    height: 65vh;
+    margin-left: 0; }
+  .publicadosBottom {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem; }
+  .contenedorPublicados__Filas {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+  .contenedorPublicados__Texto__Left {
+    font-size: 1.4rem; }
+  .contenedorPublicados__FotoLeft {
+    width: 45vw;
+    height: 65vh; }
+  /**Antes de Adoptar*******/
+  .contenedorFormularioAdoptar {
+    width: 80%; }
+  .botones__Eliminar {
+    width: 72%;
+    margin-top: 45px; }
+  /**footer*******/
   .cabecera-Logo {
     width: 5rem;
     height: 5rem; }
@@ -956,7 +1155,14 @@ h1, h3, h4, h5 {
     top: 150px;
     left: 90px; }
   .contenedorOpinionUsuario__Estrellas {
-    bottom: -5%; } }
+    bottom: -5%; }
+  /****Contacto*******/
+  .contenedorContacto__Titulo {
+    top: 30%;
+    left: 392px; }
+  .contenedorContacto__App__Foto {
+    width: 28vw;
+    height: 80vh; } }
 
 .facebookLogo {
   content: url("../imagenes/facebook.png"); }
