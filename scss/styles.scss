@@ -452,9 +452,14 @@ serán color blanco con el tipo de letra verdana con bordes color marron*/
 
 .contenedorFooter__Linkedin
 {
-display: flex;
-flex-direction: row;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a 
+    {
+        margin-top: 1rem;
+        color: #cccccc;
+    }
 }
 .contenedorFooter__Redes-Linkedin
 {
