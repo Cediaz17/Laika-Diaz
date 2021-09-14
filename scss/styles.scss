@@ -108,6 +108,10 @@ a:hover
     color: black;
     height: 45vh;
     position: relative;
+    h3
+    {
+        text-shadow: 1px 1px black;
+    }
 }
 .contenedorOpinionUsuario__Foto__Animacion
 {
@@ -230,9 +234,14 @@ background: linear-gradient(to left, #FFD200, #F7971E);
 }
 .publicadosBottom
 {
-    font-family: monospace; /*CAMBIAR TIPO*/
-    background-color: $colorLaika;
+    font-family:revertl;
+    background-color: olivedrab;
     font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    a {
+        color: black;
+        text-decoration: none;
+    }
 }
 /*******************Seccion Que necesitas**************************/
 .contenedorQueNecesitas
@@ -300,21 +309,14 @@ background: linear-gradient(to left, #FFD200, #F7971E);
 {
     margin: 0;
 }
-.contenedorPrincipal__Ancla
+.contenedorPrincipal__Foto
 {
-    position: absolute;
-    top: 15%;
-    left: 1%;
-    z-index: 1;
-    @include tamText(15px);
-}
-
-.contenedorPrincipal__Foto {
-    @include tam(100%,20%);
-    margin: 0px 0px 0px;
-    position: relative;
-    max-width: 100%;
-    object-fit: cover;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-image: url("../imagenes/group-portrait-of-adorable-puppies.jpg");
+    height: 100vh;
 }
 .contenedorPrincipal__Titulo
 {
@@ -333,27 +335,31 @@ background: linear-gradient(to left, #FFD200, #F7971E);
     justify-content: space-around;
     background-color:transparent;
     color: white;
-    height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 2px 2px 10px #650;
 } 
 .contenedorInformativo__Titulo{
     color: #0b0c06;
-    @include tamText(35px);
-    padding-top: 10px;
+    @include tamText(2.5rem);
+    padding-top: 0.5rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
 }
 .contenedorInformativo__Parrafo {
     width: 45vw;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 5%;
+    font-weight: 600;
+    font-family: 'Mali';
 }
 .contenedorInformativo__Foto
 {
     width: 45vw;
     border-radius: 5%;
-    margin: 5% 0 0 0;
+    margin: 5% 0 5% 0;
     height: 75vh;
 }
 #contenedorInformativo__Columnas
@@ -425,8 +431,12 @@ background: linear-gradient(to left, #FFD200, #F7971E);
 }
 .contenedorContacto__App__Foto
 {
-    width: 27vw;
+    width: 20vw;
     height: 73vh;;
+}
+.contenedorContacto__App
+{
+    margin-top: 3.5%;
 }
 
 /*-----------------------------------------------------*/
@@ -513,14 +523,19 @@ h2
     font-family: 'Mali', cursive;
     @include tamText(16px);
 }
-h3{
+h3
+{
     color: white;
 }
-h1 {
+h1 
+{
     font-family: 'Mali', cursive;
-    /*font-family: 'Signika Negative', sans-serif;*/
     font-weight: bold;
     @include tamText(3rem);
+}
+p
+{
+    font-family: 'Signika Negative', sans-serif;
 }
 
 /******* Carousel y ANTES DE ADOPTAR******/
@@ -546,6 +561,8 @@ h1 {
     z-index: 1;
     padding-top: 100px;
     padding-left: 404px;
+    text-shadow: 2px 1px moccasin;
+    color: $colorLaika;
 }
 .adoptar__ImagenPrincipal
 {
@@ -668,7 +685,7 @@ h1 {
 {
     .cabecera-Logo
     {
-        @include tam(6rem,4.5rem);
+        @include tam(6rem,5.3rem);
     }
     .navbar-nav {
         align-items:flex-start !important;
@@ -775,6 +792,10 @@ h1 {
         @include tam(65px, 60px);
         margin-left: 0%;
     }
+    .navbar
+    {
+    font-size: 0.8rem;
+    }
     .navbar-nav 
     {
         align-items:flex-start !important;
@@ -782,7 +803,8 @@ h1 {
     .navbar-collapse 
     {
         background: $colorLaika;
-        height: 260px;
+        height: 29vh;
+        width: 55vw;
     }
     .contenedorPrincipal__Ancla
     {
@@ -790,9 +812,9 @@ h1 {
     }
     .contenedorPrincipal__Titulo 
     {
-        @include tamText(0.9rem);
-        top: 102px;
-        left: 20px;
+        @include tamText(1.5rem);
+        top: 9rem;
+        left: 1rem;
     }
     .contenedorInformativo
     {
@@ -835,7 +857,7 @@ h1 {
     }
     .contenedorOpinionUsuario__Estrellas
     {   
-        bottom: 13%;
+        bottom: 3%;
     }
     .contenedorOpinionUsuario__Parrafo 
     {
@@ -1048,15 +1070,9 @@ h1 {
     }
     .contenedorPrincipal__Titulo 
     {
-        @include tamText(1rem);
+        @include tamText(1.5rem);
         top: 19%;
         left: 10px;
-    }
-    .contenedorPrincipal__Ancla
-    {
-        font-size: 0.5rem;
-        top: 84px;
-        left: 4px;
     }
     .contenedorOpinionUsuario__Foto
     {
@@ -1184,15 +1200,20 @@ h1 {
     {
         margin-bottom: 1rem;
     }
-
-    /**Antes de Adoptar*******/
+    .contenedorPostulate__Titulo 
+    {
+        font-size: 3.5rem;
+        z-index: 1;
+        padding-top: 413px;
+        padding-left: 11px;
+    }
     .contenedorFormularioAdoptar
     {
         width: 85%;
     }
     .botones__Eliminar {
         width: 72%;
-        margin-top: 30px;
+        margin-top: 48px;
     }
     /**Contacto*******/
     .contenedorContacto__Titulo 
@@ -1209,8 +1230,12 @@ h1 {
     }
     .contenedorContacto__App__Foto 
     {
-        width: 27vw;
-        height: 60vh;
+        width: 18vw;
+        height: 50vh;
+    }
+    .contenedorContacto__App
+    {
+        margin-top: 0.5%;
     }
         /**Footer*******/
     .contenedorFooter__logo
@@ -1380,10 +1405,10 @@ h1 {
     {
         display: none;
     }
-    .navbar-collapse 
-    {
-        background: $colorLaika;
-        height: 230px;
+    .navbar-collapse {
+        background:$colorLaika;
+        height: 40vh;
+        width: 24vw;
     }
 }
 @media (min-width: 1024px) and (max-width: 1255px)
@@ -1480,10 +1505,13 @@ h1 {
     }
     .contenedorContacto__App__Foto 
     {
-        width: 28vw;
-        height: 80vh;
+        width: 19vw;
+        height: 76vh;
     }
-    
+    .contenedorContacto__App
+    {
+        margin-top: 4%;
+    }
 }
 
 $redesSociales: (

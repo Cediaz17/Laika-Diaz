@@ -61,66 +61,63 @@
         </div>
     </nav>
     <main>
-        <div class="contenedorPrincipal__Ancla">
-            <a href="#Contacto">Quienes Somos</a>
-        </div>
         <div class ="contenedorPrincipal contacto__ImagenPrincipal"> <!--Div de Imagen inicial-->
             <H1 class="contenedorContacto__Titulo animate__animated  animate__zoomIn">En <em>Laika</em> Queremos Escucharte</H1>
         </div>
         <div class="contenedorContacto container-fluid">
             <div class="row" id="Contacto" style="justify-content: center;">
-                <section class="col-md-5 col-10 contenedorContacto__Formulario"> <!-- Seccion del formulario-->
+                <section class="col-md-7 col-10 contenedorContacto__Formulario"> <!-- Seccion del formulario-->
                     <form action="https://formspree.io/f/mrgrlwnn" method="POST" class="contenedorContacto__Formulario__Disenio">
                         <fieldset>
                             <h3>
                                 <legend class="text-center p-3">Contactanos</legend>
                                 <hr>
                             </h3>
-                            <div class="row p-2">
-                                <div class="col-12">
+                            <div class="row p-2"style="justify-content: center;">
+                                <div class="col-8">
                                     <div class="form-group p-1">
                                         <label for="nombre">Nombre: *</label>
                                         <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu Nombre" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-8">
                                 <div class="form-group p-1">
                                     <label for="Apellido">Apellido: *</label>
                                     <input type="text" id="apellido" name="apellido" placeholder="Ingresá tu Apellido" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-8">
                                 <div class="form-group p-1">
                                     <label for="correo">Correo Electronico * </label>
                                     <input type="Email" id="correo" name="correo" placeholder="Ingresá tu Correo Electronico" class="form-control">
                                 </div>
                             </div> 
-                            <div class="col-12">
+                            <div class="col-8">
                                 <div class="form-group p-1">
                                     <label for="comentario"> Escribí tu Comentario *</label>
                                     <textarea id="comentario" name="comentario" class="form-control" placeholder="Escribí tu Comentario"></textarea>
                                 </div>
+                            </div>
+                            <div class="col-8 p-1 ml-1" style="font-size: 0.8rem;margin-left: 1rem;">
+                                <label for="suscripcion">Quiero Suscribirme al Newsletter</label>
+                                <input type="checkbox" value="1">
+                        </div>
+                            <div class="col-8 p-1">
+                                    <h5 class="text-center" style="font-size: 0.8rem;">* Campos Obligatorios</h5>
                             </div> 
-                            <div class="col-12 p-1">
-                                    <h5 class="text-star">* Campos Obligatorios</h5>
-                            </div> 
-                                <div>
-                                    <label for="suscripcion">Quiero Suscribirme al Newsletter</label>
-                                    <input type="checkbox" value="1">
-                                </div>
                             </div>
                         </fieldset>
-                        <div class="row p-2">
-                            <div class="col-6">
+                        <div class="row p-2" style="justify-content: space-evenly">
+                            <div class="col-6 col-md-4">
                                 <input type="submit" value="Enviar" class="btn btn-outline-success form-control">
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-md-4">
                             <input type="reset" value="Borrar Campos" class="btn btn-outline-danger form-control">
                             </div>
                         </div>
                     </form>
                 </section>
-                <section class="col-md-7 col-10 container contenedorContacto__App"> <!--Seccion de imagen-->
+                <section class="col-md-5 col-10 container contenedorContacto__App"> <!--Seccion de imagen-->
                     <div class="row">
                         <H3 class="text-center p-3">Descargate nuestra APP</H3>
                         <hr>
