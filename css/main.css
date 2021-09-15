@@ -381,7 +381,9 @@ a:hover {
   align-items: center;
   padding-left: 5%;
   font-weight: 600;
-  font-family: 'Mali'; }
+  font-family: 'Mali';
+  color: black;
+  text-shadow: 0px 0.5px yellowgreen; }
 
 .contenedorInformativo__Foto {
   width: 45vw;
